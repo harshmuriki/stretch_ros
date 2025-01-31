@@ -210,7 +210,7 @@ class GraspObjectNode(hm.HelloNode):
         )
 
     def main(self):
-        hm.HelloNode.main(self, 'grasp_object_new', 'grasp_object_new', wait_for_first_pointcloud=False)
+        hm.HelloNode.main(self, 'lmgraspnav', 'lmgraspnav', wait_for_first_pointcloud=False)
 
         self.debug_directory = rospy.get_param('~debug_directory')
         rospy.loginfo('Using the following directory for debugging files: {0}'.format(self.debug_directory))
